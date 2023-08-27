@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connect IE Redesign</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+
+<body>
+    <div id="nav-wrapper">
+        <header>
+            <div id="alina"><a href="/">Alina Verduzco</a></div>
+            <nav>
+                <ul class="nav-ul">
+                    <li><a href="/index.html" class="current-page">Projects</a></li>
+                    <li><a href="/assets/av-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                    <li><a href="/about.html">About Me</a></li>
+                </ul>
+            </nav>
+    
+            <div id="menu-icon" onclick="toggleMobileMenu(this)">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><span class="material-symbols-outlined">menu</span>
+                <ul class="mobile-menu">
+                    <li><a href="/index.html" class="current-page">Projects</a></li>
+                    <li><a href="/assets/av-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                    <li><a href="/about.html">About Me</a></li>
+                </ul>
+            </div>
+        </header>
+        </div>
+
+    <div class="hero hero-connect-ie">
+        <h1 class="proj-title">Connect IE Redesign</h1>
+        <p>Increasing trust and improving usability for an online directory of community resources.</p>
+        <img src="/assets/connect-ie-hero.png" alt="4 mockups of redesigned Connect IE screens on mobile: home, categories, search results, and program pages.">
+    </div>
+
+    <div class="all-content row">
+
+        <div class="col-2 sidebar">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#research">Research</a></li>
+                    <li class="indent"><a href="#interviews">Interviews</a></li>
+                    <li class="indent"><a href="#analysis">Website Analysis</a></li>
+                    <li class="indent"><a href="#study">Usability Study</a></li>
+                    <li class="indent"><a href="#synthesis">Journey Mapping</a></li>
+                    <li class="indent"><a href="#competitors">Competitive Analysis</a></li>
+                <li><a href="#design">Design</a></li>
+                    <li class="indent"><a href="#wireframes">Wireframes</a></li>
+                    <li class="indent"><a href="#lo-fi">Lo-Fi Prototype</a></li>
+                    <li class="indent"><a href="#hi-fi">Hi-Fi Prototype</a></li>
+                    <li class="indent"><a href="#validation">Validation</a></li>
+                    <li class="indent"><a href="#final">Final Design</a></li>
+                <li><a href="#reflection">Reflection</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </div>
+
+        <main>
+        <div class="col-10 main-content">
+            <section id="overview">
+            <h2 class="small-caps">Overview</h2>
+            <h3 class="start">About this project</h3>
+                <p class="first-p">This was a side project I took on while at CSUSB. I conducted research, created wireframes and prototypes, and tested the design. In my research, I was able to work with real stakeholders at Inland Empire Health Plan (IEHP) who were involved in creating the original site and who currently use it in their work to support IEHP members.</p>
+            <h3>The Problem</h3>
+                <p class="first-p">Programs like Medi-Cal and CalFresh exist to meet the needs of people with low-income, but people need more than healthcare and food. Thankfully, there are community organizations that work to fill in the gap and address these needs in the Inland Empire. The problem is that these organizations are hard to find. When a person finds themself in need, <span class="highlight">tracking down assistance can feel frustrating and hopeless.</span></p>
+                <p>Connect IE was created to facilitate this process. The website serves as an online directory of services, from housing assistance to job training and school supplies.</p>
+                <img src="assets/connect-ie-old-screens.png">
+                <p class="caption">Screens from the current Connect IE mobile site.</p>
+                <p>It gets the job done in its current state, but <span class="highlight">it has some usability problems and a visual design that most users find unpleasant and untrustworthy.</span> Because of these issues, some features are difficult for users to find. At the same time, there are features that users won't use because they don't trust the site with their personal information.</p>
+            <h3>The Solution</h3>
+                <p class="first-p">To improve Connect IE's usability, I restructured the search flow, organized page content, and added menu navigation. To increase user trust in the site, I improved the visual design with accessible type, a consistent design system, and welcoming photography.</p>
+                <img src="assets/connect-ie-new-screens.png">
+                <p class="caption">Redesigned screens of the Connect IE mobile site. <a href="#final">Jump to final design.</a></p>
+                <p>The redesigned site is easier to use and gives users better control over how they want to search. Users think the redesign is friendly, official, and trustworthy.</p>
+            </section>
+             
+            <section id="research">
+            <h2 class="small-caps">Research</h2>
+            <h3 class="start" id="interviews">Understanding Connect IE</h3>
+                <p class="first-p">To learn about the site and its goals, I started my research by interviewing stakeholders at IEHP.</p>
+            <h4>Business Goals</h4>
+                <ul class="first-p">
+                    <li>To make the community aware of services that exist in the Inland Empire</li>
+                    <li>To address the needs of the community that can't be met by government services</li>
+                </ul>
+            <h4>What does a successful user experience look like?</h4>
+                <ol class="first-p">
+                    <li>The user knows about Connect IE.</li>
+                    <li>The user has a need.</li>
+                    <li>They use Connect IE to find a local service.</li>
+                    <li>The user has their need met.</li>
+                </ol>
+            <h3>Understanding Users</h3>
+                <p class="first-p">Connect IE has <span class="highlight">three types of users:</span> community organizations who upload their services to the site, social workers who use the site to help their clients, and individuals who use the site to address their personal needs.</p>
+                <p><span class="highlight">Connect IE's goal is to give individuals the ability to find local services, so I chose to focus on the end user.</span> Based on my interviews, I learned that most of these users:</p>
+                <ul>
+                    <li>Are low-income</li>
+                    <li>Are middle-aged or older</li>
+                    <li>Don't have access to a desktop computer</li>
+                    <li>Are seeking childcare, shelter, clothing, or transportation</li>
+                </ul>
+                <p>Based on Connect IE's business goals and end users, <span class="highlight">I decided to focus on the search flow of the mobile website.<span></p>
+            <h3>Evaluating the Current Design</h3>
+            <h4 id="analysis">Website Analysis</h4>
+                <p class="first-p">Before testing with real users, I needed to analyze it from my point of view. I outlined three problem areas to explore in the usability study:</p>
+                <ul>
+                    <li>It <span class="highlight">doesn't follow design patterns,</span> so it can be confusing to use.</li>
+                    <li>It's <span class="highlight">disorganized.</span> Information is repeated, missing, or in the wrong place.</li>
+                    <li>It <span class="highlight">doesn't look trustworthy.</span> If users don't trust the site, they won't use it.</li>
+                </ul>
+                <img src="/assets/connect-ie-analysis.png">
+                <p class="caption">Some issues with the current design: CTA button without context, inconsistent button rows, program information drops down into search results, and redundant information.</p>
+            <h4>Usability Study</h4>
+                <p id="study" class="first-p">To see how it performed in real life, I conducted a usability study with six people.</p>
+                <img src="/assets/connect-ie-usability-study.png" alt="Screens from the current Connect IE mobile site with sticky notes from user testing." class="no-caption"> 
+                <p>On average, this is how users rated Connect IE:</p>
+                <img src="/assets/connect-ie-rating-before.png" alt="Overall = 7.6; Quality of Information = 8.8; Organization of Information = 6.3; Visuals = 4.3; Trustworthiness = 6.6" class="no-caption">
+            <h5 class="quote">“It looks strung together.”</h5>
+                <p class="first-p"><span class="highlight">Visuals were the biggest pain point</span> for users. They thought the site looked unprofessional, pointing out inconsistent colors and illegible text.</p>
+            <h5 class="quote">“The worst thing is how unorganized it is.”</h5>
+                <p class="first-p">Users were also confused by the <span class="highlight">organization of content on pages.</span> They noticed buttons and fields without context, repetitive information, and inconsistencies between elements they expected to be the same. When programs listed multiple locations, some users thought they were looking at new entries in the search results.</p> 
+            <h5 class="quote">“You have to pay attention and look at things or else you'll miss stuff.”</h5>
+                <p class="first-p"><span class="highlight">Some features were hard to find.</span> Most users couldn't find categories, while half couldn't find the search filters.</p>
+            <h5 class="quote">“I don't want you to have my information.”</h5>
+                <p class="first-p">Users had <span class="highlight">low trust</span> in Connect IE because of its visual design. Seeing its association with IEHP reassured them, as well as being able to use the site without creating an account.</p>
+            <h3 id="synthesis">Contextualizing the Data</h3>
+                <p class="first-p">The next step was to put all of this information in context.</p>
+                <p><span class="highlight">I revisited my stakeholders to create journey maps.</span> We started with a high level view showing where Connect IE might fit into the life of an end user. Then, we made a journey map focusing on their step-by-step use of Connect IE.</p>
+                <img src="assets/connect-ie-journey-map.png">
+                <p class="caption">Journey map showing the step-by-step use of Connect IE.</p>
+                <p>The journey maps helped identify opportunities to explore in the redesign, but they also brought up a new insight.</p>
+            <h4>Users already know what they need before they use Connect IE</h4>
+                <p class="first-p">Based on the usability study, I thought that category navigation would be really important. But if users already know what they need, navigating through categories could be extra work. <span class="highlight">How important is browsing by category in this context?</span></p>
+            <h3 id="competitors">Competitive Analysis</h3>
+                <p class="first-p">What might users expect from a site like Connect IE? I did a competitive analysis to see how similar sites approach visual design, organization, discoverability of features, and user trust.</p>
+                <img src="assets/connect-ie-competitors.png">
+                <p class="caption">Screens from similar sites: Community Relay, Kaiser Permanente, Inland SoCal 211, and BenefitsCal.</p>
+                <p>Competitors all took different approaches and no one site did everything perfectly&mdash; some had too much text, some had too many drop-downs, and some weren't designed responsively. On the positive side, I noticed <span class="highlight">straightforward UIs, strong hierarchy, menu navigation, and welcoming photography.</span> I also noticed that some sites <span class="highlight">offered categories alongside keyword search,</span> which would work for any user's preference.</p>
+            </section>
+
+            <section id="design">
+            <h2 class="small-caps">Design</h2>
+            <h3 id="wireframes" class="start">Ideation</h3>
+                <p class="first-p">I sketched out multiple wireframes for each page, exploring the opportunities identified in my journey map.</p>
+                <img src="/assets/connect-ie-wireframes.png" alt="Annotated wireframes sketched on paper.">
+                <p>These were my main goals:</p>
+                <ul>
+                    <li>Improve the organization of content by grouping related information.</li>
+                    <li>Make categories discoverable by including them on the home page.</li>
+                    <li>Meet user expectations by adding a menu and opening buttons to new pages.</li>
+                    <li>Structure content on the home page to make Connect IE's mission transparent.</li>
+                </ul>
+            <h3 id="lo-fi">Prototype, Test, Iterate</h3>
+                <p class="first-p">I wanted to get some feedback at this stage, so I created lo-fi prototypes and started testing with users.</p>
+                <img src="/assets/connect-ie-lo-fi.png" alt="Screens from three lo-fi prototypes with sticky notes from user testing." class="no-caption">
+                <p>We tested a few different iterations to find the search flow and page layouts that made the most sense. These tests also answered my question about categories and keyword search.</p>
+            <h4 class="quote">“I don't want to type a keyword and it not come up because I used the wrong word.”</h4>
+                <p class="first-p">As I tested with more people, I found that <span class="highlight">everyone preferred to start their search with categories.</span> This approach helped them feel certain that they were really seeing all of the options that Connect IE had to offer in that category.</p>
+            <h3 id="hi-fi">Increasing Fidelity</h3>
+                <p class="first-p">Visuals and trustworthiness were the other pain points for users, so the next step was to focus on creating a professional and welcoming UI.</p>
+                <p>I took pointers from California's <a href="https://designsystem.webstandards.ca.gov/style/design/" target="_blank" rel="noopener noreferrer">Visual design style guide</a>, which prioritizes accessibility, trustworthiness, and friendliness in designing for the public.</p>
+                <img src="/assets/connect-ie-increasing-fidelity.png" alt="Hi-fi screens: home, category, search result, and program pages." class="no-caption">
+                <p>These were my goals:</p>
+                <ul>
+                    <li>Improve legibility and hierarchy with an accessible font family and type scale.</li>
+                    <li>Create a professional look by using consistent spacing and styling.</li>
+                    <li>Increase user trust by including photography on the home page.</li>
+                </ul>
+            <h3 id="validation">More Testing</h3>
+                <p class="first-p">Next, I tested the hi-fi design with users.</p>
+                <img src="/assets/connect-ie-hi-fi.png" alt="Screens from one hi-fi prototype with sticky notes from user testing." class="no-caption">
+                <p>This is how they rated Connect IE after the redesign:</p>
+                <img src="/assets/connect-ie-rating-after.png" alt="Overall = 8.3; Quality of Information = 9; Organization of Information = 9.6; Visuals = 9.8; Trustworthiness = 10" class="no-caption">
+            <h5 class="quote">"It's a legit site that can help me."</h4>
+                <p class="first-p">Users had the most to say about the new visual design. The most common theme was that the redesign <span class="highlight">looked official.</span> They said it looked like a government or non-profit website, which they would expect and trust with their personal information.</p>
+            <h5 class="quote">"It feels like they care."</h4>
+                <p class="first-p">On top of looking official, users also thought the new design was <span class="highlight">welcoming and friendly,</span> which they attributed to the photos on the home page.</p>
+            <h5 class="quote">"Do I really qualify?"</h4>
+                <p class="first-p">As we tested the redesign, the only concern users had was the quality of information. Users wanted to be certain that they qualified, but <span class="highlight">providers didn't always list specific eligibility requirements.</span></p>
+                <p>This isn't an easy fix, because providers control the content on their pages. (A solution might be to redesign the process of inputting information and encourage specificity.) For now, this concern tells me I met the goals of this redesign&mdash; <span class="highlight">all of the other problems are out of the way and users can now focus on the information.</span></p>
+            <h3 id="final">Final Design</h3>
+            <div class="video-wrapper final-video-connect-ie">
+                <video height="490px" autoplay loop>
+                    <source src="/assets/connect-ie-final.mp4">
+                    Your browser does not support this video.
+                </video>
+            </div>
+            <p class="caption">Redesigned category search flow. <a href="https://www.figma.com/proto/zRS9xuvZB42Oy2pnb5DtGw/Connect-IE-(Copy)?type=design&node-id=186-607&t=cWI7husEEsw5GBMc-1&scaling=scale-down&page-id=186%3A2&starting-point-node-id=186%3A607&mode=design" target="_blank" rel="noopener noreferrer">View in Figma.</a></p>
+            <h4>Accessible Type Scale</h4>
+                <img src="/assets/connect-ie-final-type-scale.png" alt="Three redesigned screens that are text-only: program page, share form, and contact form." class="no-caption">
+                <p class="first-p">Before, Connect IE had body copy as small as 14px. The lack of hierarchy also made it difficult for users to tell what type of information they were looking at.</p>
+                <p>The redesign has a base size of <span class="highlight">18px for body copy and strong hierarchy</span> to make groupings clear and information skimmable.</p>
+            <h4>Consistent Design Patterns</h4>
+                <img src="/assets/connect-ie-final-design-patterns.png" alt="Four redesigned screens: home, menu, search results, and program page." class="no-caption">
+                <p class="first-p">Before, many buttons on Connect IE opened drop-down menus. In the search results, that meant users had to scroll down to read information and scroll back to apply. The site also lacked menu navigation, so users could only move forward or backward through the site.</p>
+                <p>In the redesign, <span class="highlight">buttons open to new pages</span> so that search results aren't interrupted. When programs have multiple locations, it's clear to users because they know they're on that program's page.</p>
+            <h4>Welcoming Home Page</h4>
+                <img src="/assets/connect-ie-final-design-home-page.png" alt="Three screens showing different sections of the home page." class="no-caption">
+                <p class="first-p">Before, Connect IE's home page greeted users with a floating CTA button and centered on the keyword search feature. Introductory information about the site was at the bottom of the page.</p>
+                <p>The redesigned home page welcomes users with an introduction and uses <span class="highlight">photography to humanize the site and illustrate the services</span> that are offered.</p>
+            <h4>Discoverable Categories</h4>
+                <img src="/assets/connect-ie-final-design-categories.png" alt="Four redesigned screens: category section of home page, menu with option to search by category, categories page, categories page with Housing option expanded." class="no-caption">
+                <p class="first-p">Before, users were only able to find categories if they used the keyword search with just a ZIP code.</p>
+                <p>In the redesign, the most popular <span class="highlight">categories are featured on the home page,</span> as well as a button to see all categories. With the addition of the menu, users can also navigate to categories from anywhere on the site.</p>
+            <h4>Streamlined Search Result Cards</h4>
+                <img src="/assets/connect-ie-final-design-cards.png" alt="Two redesigned screens: cards on search results page, program page with button to Contact through Connect IE in contact information section.">
+                <p class="first-p">Before, the search result cards had five possible buttons, depending on the features available for each program. If you couldn't apply or contact through Connect IE's forms, these buttons would repeat the contact information in the card or tell you to apply by contacting the program (and repeating the contact information in the card).</p>
+                <p>The redesigned search result cards only feature the three buttons that apply to every program. This <span class="highlight">keeps the button row consistent and avoids repeating information</span> and annoying users. If you can apply or contact through Connect IE, these buttons are located on the program's page.</p>
+            </section>
+                
+            <section id="reflection">
+            <h2 class="small-caps">Reflection</h2>
+            <h3 class="start">What I learned</h3>
+                <p class="first-p">In this project, I saw firsthand how important aesthetics are to users. This made the redesign a challenge&mdash; Connect IE is a directory, so most of its pages are utilitarian and serve to convey information. There aren't many opportunities to incorporate the visuals that users value so much. Because of this, I was really intentional with the copy and photography on the home page to orient users before entering the text-only pages of the site.</p>
+            <h3>Next Steps</h3>
+                <p class="first-p">If I were to take this project further, I would want to focus on form design. There are many forms throughout the site that allow users to share, contact, and apply to programs. The Personal Needs Assessment is a major feature that matches users with programs based on their answers to demographic questions. I noticed that many of these forms are long and intimidating, but addressing them wasn't the focus of this project.</p>
+            </section>
+
+            <section id="references">
+                <h2 class="small-caps">References</h2>
+                    <ol>
+                        <li>State of California. <em>Visual design style guide.</em> California Design System. <a href="https://designsystem.webstandards.ca.gov/style/design/" target="_blank" rel="noopener noreferrer" class="long-link">https://designsystem.webstandards.ca.gov/style/design/</a></li>
+                    </ol>
+            </section>
+        </div>
+        </main>
+    </div>
+
+    <div class="footer">
+        <div class="all-content">
+            <div class="footer-content">
+                <p>&copy; 2023 Alina Verduzco</p>
+                <a href="https://www.linkedin.com/in/alinaverduzco/" target="_blank" rel="noopener noreferrer"><img src="/assets/linked-in.png" alt="Visit my LinkedIn profile" class="icon"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+    </script>
+
+</body>
+
+</html>

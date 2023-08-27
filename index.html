@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alina Verduzco</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div id="nav-wrapper">
+    <header>
+        <div id="alina"><a href="/">Alina Verduzco</a></div>
+        <nav>
+            <ul class="nav-ul">
+                <li><a href="#" class="current-page">Projects</a></li>
+                <li><a href="/assets/av-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="/about.html">About Me</a></li>
+            </ul>
+        </nav>
+
+        <div id="menu-icon" onclick="toggleMobileMenu(this)">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><span class="material-symbols-outlined">menu</span>
+            <ul class="mobile-menu">
+                <li><a href="#" class="current-page">Projects</a></li>
+                <li><a href="/assets/av-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="/about.html">About Me</a></li>
+            </ul>
+        </div>
+    </header>
+    </div>
+    
+    <div class="container">
+        <div class="proj-grid">
+            
+            <div class="card" onclick="location.href='/culture-ux.html';" style="cursor:pointer;" tabindex="0" onkeydown="">
+                <img src="/assets/p1-hero.png" alt="3 by 3 arrangement of circles on a pick background. 8 circles are colored red. 1 is empty with a gray dashed outline." class="card-img card-img-culture">
+                <div class="card-content">
+                    <h2 class="card-title">Culture and UX Research</h2>
+                    <p class="card-description first-p">Testing the think aloud, survey, and interview with Black, Asian, and Latinx women. Does culture have an impact?</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="location.href='/connect-ie.html';" style="cursor:pointer;" tabindex="0" onkeydown="">
+                <img src="/assets/connect-ie.png" alt="2 mockups of redesigned Connect IE screens on mobile: home page and search results page." class="card-img card-img-connect-ie">
+                <div class="card-content">
+                    <h2 class="card-title">Connect IE Redesign</h2>
+                    <p class="card-description first-p">Increasing trust and improving usability for an online directory of community resources.</p>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="all-content">
+            <div class="footer-content">
+                <p>&copy; 2023 Alina Verduzco</p>
+                <a href="https://www.linkedin.com/in/alinaverduzco/" target="_blank" rel="noopener noreferrer"><img src="/assets/linked-in.png" alt="Visit my LinkedIn profile" class="icon"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open')
+        }
+    </script>
+
+</body>
+
+</html>
