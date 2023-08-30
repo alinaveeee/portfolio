@@ -250,6 +250,7 @@ header ul.nav-ul li:last-child {
 
 ul.mobile-menu {
     padding-top: 1.5rem;
+    max-width: 100dvw;
 }
 
 ul.mobile-menu li {
