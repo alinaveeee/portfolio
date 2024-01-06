@@ -2,22 +2,28 @@
     margin: 0rem;
     padding: 0rem;
     box-sizing: border-box;
-    scroll-padding-top: 1.625rem;
+    scroll-padding-top: 83px;
 }
 
 :root {
     --main-bg: hsl(340, 4%, 98%);
-    --gray-bg: hsl(340, 4%, 90%);
+    --gray-bg: hsl(340, 4%, 94%);
 
     --black: hsl(340, 4%, 13%);
     --light-gray: hsl(340, 4%, 45%);
     --med-gray: hsl(340, 4%, 30%);
     --dark-gray: hsl(340, 4%, 15%);
 
-    --red: hsl(336, 77%, 34%);
-    --pink: hsl(336, 47%, 90%);
+    --gray: hsl(340, 4%, 90%);
+    --gray-light: hsl(340, 4%, 92%);
 
-    --purple: hsl(319, 19%, 61%);
+    --purple: hsl(319, 21%, 89%);
+    --purple-light: hsl(319, 21%, 91%);
+
+    --pink: hsl(336, 47%, 91%);
+    --pink-light: hsl(336, 47%, 93%);
+
+    --red: hsl(336, 77%, 34%);
 }
 
 html {
@@ -61,10 +67,12 @@ h1 {
     font-size: 1.625rem;
     font-weight: 700;
     color: var(--black);
+    max-width: 42.5rem;
 }
 
 h2 {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 700;
     color: var(--light-gray);
     max-width: 42.5rem;
@@ -76,14 +84,14 @@ h2 {
     font-weight: 400;
 }
 
-h2.small-caps {
-    padding-top: 4rem;
+.new-section {
+    margin-top: 3.65625rem;
 }
 
 h3 {
     font-size: 1.375rem; 
     font-weight: 700;
-    padding-top: 1rem;
+    margin-top: 1rem;
     color: var(--black);
     max-width: 42.5rem;
 }
@@ -140,6 +148,7 @@ p.caption {
     line-height: 1.625rem;
     color: var(--light-gray);
     margin-top: 0.5rem;
+    margin-bottom: 3.5rem;
 }
 
 .highlight {
@@ -154,6 +163,7 @@ p.caption {
     position: fixed;
     width: 100%;
     z-index: 2; /* sets layer order in front of sidebar */
+    background-color: var(--main-bg);
 }
 
 header {
@@ -162,7 +172,7 @@ header {
     max-width: 75rem;
     margin: 0rem auto;
     background-color: var(--main-bg);
-    border-bottom: 0.0625rem solid var(--gray-bg);
+    border-bottom: 0.0625rem solid var(--gray);
 }
 
 header a {
@@ -275,10 +285,15 @@ ul.mobile-menu li a:active {
     text-decoration: none;
 }
 
+.spacer {
+    height: 87px;
+}
+
 .hero {
     max-width: 75rem;
     margin: 0rem auto;
     padding: 4rem;
+    background-color: var(--gray);
 }
 
 .hero img {
@@ -290,12 +305,13 @@ ul.mobile-menu li a:active {
 
 .hero p {
     text-align: center;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
 }
 
 .proj-title {
     text-align: center;
-    margin: 6rem 0rem 0rem 0rem;
+    margin: 0 auto;
+    max-width: none;
 }
 
 .container {
@@ -305,17 +321,22 @@ ul.mobile-menu li a:active {
     padding-top: 5.4375rem;
 }
 
-.proj-grid {
+.home-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
 .card-img {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    background-color: var(--gray);
 
+}
+
+.card-img:hover {
+    background-color: var(--gray-light);
 }
 
 .card-img-culture {
@@ -323,18 +344,70 @@ ul.mobile-menu li a:active {
     padding: 5rem;
 }
 
+.card-img-culture:hover {
+    background-color: var(--pink-light);
+}
+
 .hero-culture {
     background-color: var(--pink);
 }
 
 .card-img-connect-ie {
-    background-color: var(--gray-bg);
     padding: 2rem;
     object-fit: contain;
 }
 
 .hero-connect-ie {
-    background-color: var(--gray-bg);
+    background-color: var(--gray);
+}
+
+.hero-time-travel {
+    background-image: url("/assets/time-travel-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 690px;
+}
+
+.hero-time-travel h1,
+.hero-time-travel p {
+    color: var(--main-bg);
+}
+
+/* .hero-asi {
+    background-image: none;
+} */
+
+.hero-comette {
+    background-color: black;
+}
+
+.hero-comette h1,
+.hero-comette p {
+    color: var(--main-bg);
+}
+
+.card-img-asi {
+    padding: 3.5rem;
+}
+
+.card-img-time-travel {
+    filter: brightness(115%);
+}
+
+.card-img-time-travel:hover {
+    filter: brightness(120%);
+}
+
+.card-img-ca-energy {
+    background-color: black;
+}
+
+.card-img-ca-energy:hover {
+    filter: brightness(110%);
+}
+
+.card-img-comette:hover {
+    filter: brightness(110%);
 }
 
 .video-wrapper {
@@ -345,7 +418,7 @@ ul.mobile-menu li a:active {
 }
 
 .final-video-connect-ie {
-    background-color: var(--gray-bg);
+    background-color: var(--gray);
 }
 
 .final-video-connect-ie video {
@@ -355,13 +428,27 @@ ul.mobile-menu li a:active {
 .card-title {
     font-size: 1.25rem; 
     font-weight: 700;
+    line-height: 1.75rem;
     padding-top: 1rem;
     color: var(--black);
     max-width: 42.5rem;
 }
 
+.card-title a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    color: var(--red);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .card-description {
     margin: 0rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
 }
 
 .all-content {
@@ -386,6 +473,7 @@ ul.mobile-menu li a:active {
 
 .sidebar ul li.indent {
     margin-left: 1.5rem;
+    font-size: 1rem;
 }
 
 .sidebar ul li a {
@@ -399,12 +487,12 @@ ul.mobile-menu li a:active {
 }
 
 .main-content {
-    padding-left: 7.5rem;
+    padding-left: 2.5rem;
 }
 
 .main-content img {
     max-width: 42.5rem;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     display: block;
 }
 
@@ -420,8 +508,25 @@ img.data-viz {
 }
 
 img.no-caption {
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
 }
+
+.google-slides {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 42.5rem;
+    margin: 3.5rem 0 3.5rem;
+  }
+  .google-slides iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
 
 .viz-wrapper {
     padding-top: 0rem;
@@ -439,7 +544,8 @@ img.no-caption {
 }
 
 .page-title {
-    margin-top: 1.5rem;
+    margin-top: 88px;
+    max-width: 42.5rem;
 }
 
 #references ol {
@@ -450,14 +556,10 @@ img.no-caption {
     margin: 0rem 0rem 1rem 1.125rem;
 }
 
-.page-title {
-    margin-top: 1.5rem;
-}
-
 .footer {
     max-width: 100%;
     margin-top: 3rem;
-    background-color: var(--gray-bg);
+    background-color: var(--gray-light);
 }
 
 .footer-content {
@@ -466,10 +568,8 @@ img.no-caption {
     padding: 0rem;
 }
 
-.footer-right {
-    display: flex;
-    justify-content: right;
-    padding: 0rem;
+.footer p {
+    font-size: 1rem;
 }
 
 .footer img {
@@ -494,12 +594,22 @@ img.no-caption {
         margin: 0rem 2rem;
     }
 
+    .hero {
+        margin: 0rem 2rem;
+    }
+
     .all-content {
         margin: 0rem 2rem;
     }
 
     .main-content {
         padding-left: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .main-content img {
+        max-width: 100%;
     }
 }
 
@@ -516,6 +626,14 @@ img.no-caption {
         display: block;
     }
 
+    .spacer {
+        height: 63px;
+    }
+
+    .hero {
+        margin: 0rem auto;
+    }
+
     .card-img-culture {
         padding: 4rem;
     }
@@ -524,23 +642,54 @@ img.no-caption {
         padding: 0rem;
     }
 
+    .main-content img {
+        max-width: 42.5rem;
+    }
+
     div.sidebar {
         display: none;
+    }
+
+    h1,
+    h1.page-title,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    ol,
+    ul,
+    img,
+    .video-wrapper,
+    .viz-chunk {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page-title {
+        margin-top: 3.5rem;
     }
 
     .viz-wrapper {
         padding: 0rem 4rem;
     }
 
+    img.data-viz {
+        max-width: 100%;
+    }
+
     a {
         text-decoration: underline;
     }
 
+    .footer p {
+        margin: 1.5rem 0;
+    }
 }
 
 @media only screen and (max-width: 910px) {
     .hero {
-        padding: 2rem;
+        padding: 3.5rem 2rem 3rem 2rem;
     }
 }
 
@@ -563,16 +712,23 @@ img.no-caption {
 @media only screen and (max-width: 640px) {
     h1,
     h2 {
-        font-size: 1.625rem;
+        font-size: 1.5rem;
+    }
+
+    .small-caps {
+        font-size: 1rem;
     }
 
     h3 {
-        font-size: 1.375rem;
+        font-size: 1.25rem;
     }
 
-    h4,
+    h4 {
+        font-size: 1.125rem;
+    }
+
     h5 {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     p,
