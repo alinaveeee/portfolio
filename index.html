@@ -21,7 +21,7 @@
         <nav>
             <ul class="nav-ul">
                 <li><a href="#" class="current-page">Projects</a></li>
-                <li><a href="assets/av-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="about.html">About Me</a></li>
             </ul>
         </nav>
@@ -30,7 +30,7 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"><span class="material-symbols-outlined">menu</span>
             <ul class="mobile-menu">
                 <li><a href="#" class="current-page">Projects</a></li>
-                <li><a href="assets/av-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="about.html">About Me</a></li>
             </ul>
         </div>
@@ -38,22 +38,39 @@
     </div>
     
     <div class="container">
-        <div class="proj-grid">
-            
-            <div class="card" onclick="location.href='culture-ux.html';" style="cursor:pointer;" tabindex="0" onkeydown="">
-                <img src="assets/p1-hero.png" alt="3 by 3 arrangement of circles on a pick background. 8 circles are colored red. 1 is empty with a gray dashed outline." class="card-img card-img-culture">
+        <div class="home-grid">
+
+            <div class="card">
+                <img src="assets/p1-hero.png" alt="3 by 3 arrangement of circles on a pick background. 8 circles are colored red. 1 is empty with a gray dashed outline." class="card-img card-img-culture" onclick="location.href='culture-ux.html';" style="cursor:pointer;">
                 <div class="card-content">
-                    <h2 class="card-title">Culture and UX Research</h2>
-                    <p class="card-description first-p">Testing the think aloud, survey, and interview with Black, Asian, and Latinx women. Does culture have an impact?</p>
+                    <h2 class="card-title"><a href="culture-ux.html">Exploring the Impact of Culture on UX Research Methods</a></h2>
+                    <p class="card-description first-p">For my thesis, I wanted to explore what it meant to do good UX research. What started as a question on effectiveness morphed into an exploration of power, marginalization, and justice in design.</p>
                 </div>
             </div>
 
-            <div class="card" onclick="location.href='connect-ie.html';" style="cursor:pointer;" tabindex="0" onkeydown="">
-                <img src="assets/connect-ie.png" alt="2 mockups of redesigned Connect IE screens on mobile: home page and search results page." class="card-img card-img-connect-ie">
+            <div class="card">
+                <img src="assets/connect-ie.png" alt="2 mockups of redesigned Connect IE screens on mobile: home page and search results page." class="card-img card-img-connect-ie" onclick="location.href='connect-ie.html';" style="cursor:pointer;">
                 <div class="card-content">
-                    <h2 class="card-title">Connect IE Redesign</h2>
-                    <p class="card-description first-p">Increasing trust and improving usability for an online directory of community resources.</p>
+                    <h2 class="card-title"><a href="connect-ie.html">Redesigning ConnectIE.org</a></h2>
+                    <p class="card-description first-p">I thought Connect IE was a great tool whose social impact could be expanded with UX design. Working with real stakeholders, I learned about the challenges of grassroots development and the importance of aesthetics in gaining user trust.</p>
                 </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/time-travel.jpg" alt="Portrait photo of woman in thought. She looks into the distance with her eyes squitend and her head to one side. She has light brown skin, curly brown hair, and brown glasses." class="card-img card-img-time-travel" onclick="location.href='time-travel.html';" style="cursor:pointer;">
+                <div class="card-content">
+                    <h2 class="card-title"><a href="time-travel.html">User Research for the Time Travel Collective</a></h2>
+                    <p class="card-description first-p">In this group project, we explored the fuzzy monster problem of time travel as a service. Interviewing real people to gain relevant insights was a challenge. How might we ease user anxieties toward new technology?</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/asi.png" alt="Pink Swwetheart sticker that reads: XOXO -ASI." class="card-img card-img-asi" onclick="location.href='asi.html';" style="cursor:pointer;">
+                <div class="card-content">
+                    <h2 class="card-title"><a href="asi.html">Graphic Design for Associated Students, Incorporated</a></h2>
+                    <p class="card-description first-p">I was a graphic designer at ASI for one year. Working on a variety of projects with real constraints helped me develop practical skills and experience.</p>
+                </div>
+            </div>
             </div>
         
         </div>
@@ -77,5 +94,4 @@
     </script>
 
 </body>
-
 </html>
