@@ -662,7 +662,8 @@ img.no-caption {
     ul,
     img,
     .video-wrapper,
-    .viz-chunk {
+    .viz-chunk,
+    .google-slides {
         margin-left: auto;
         margin-right: auto;
     }
