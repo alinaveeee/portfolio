@@ -432,6 +432,7 @@ ul.mobile-menu li a:active {
     padding-top: 1rem;
     color: var(--black);
     max-width: 42.5rem;
+    margin-left: 0;
 }
 
 .card-title a{
