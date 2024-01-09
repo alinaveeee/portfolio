@@ -761,4 +761,7 @@ img.no-caption {
         max-height: 14rem;
         margin-bottom: 1rem;
     }
+    .home-grid {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
 }
