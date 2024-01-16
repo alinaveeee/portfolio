@@ -324,7 +324,7 @@ ul.mobile-menu li a:active {
 .home-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 .card-img {
@@ -399,11 +399,11 @@ ul.mobile-menu li a:active {
 }
 
 .card-img-ca-energy {
-    background-color: black;
+    padding: 0;
 }
 
 .card-img-ca-energy:hover {
-    filter: brightness(110%);
+    filter: brightness(102%);
 }
 
 .card-img-comette:hover {
@@ -760,8 +760,5 @@ img.no-caption {
     .hero-culture img {
         max-height: 14rem;
         margin-bottom: 1rem;
-    }
-    .home-grid {
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
 }
