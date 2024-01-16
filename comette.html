@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alina Verduzco - Designing the Comette Typeface</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+
+<body>
+    <div id="nav-wrapper">
+        <header>
+            <div id="alina"><a href="index.html">Alina Verduzco</a></div>
+            <nav>
+                <ul class="nav-ul">
+                    <li><a href="index.html" class="current-page">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </nav>
+    
+            <div id="menu-icon" onclick="toggleMobileMenu(this)">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><span class="material-symbols-outlined">menu</span>
+                <ul class="mobile-menu">
+                    <li><a href="index.html" class="current-page">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="hero hero-comette">
+        <h1 class="proj-title">Designing the Comette Typeface</h1>
+        <p>I designed Comette, a retrofuturistic typeface inspired by Futura and the Moon landing. Through my research, I learned how history defines typographical meaning and carries into our visual language today.</p>
+        <img src="assets/comette.jpg" alt="">
+    </div>
+
+    <div class="all-content row">
+
+        <div class="col-3 sidebar">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#ideation">Ideation</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#design">Design</a></li>
+                    <li class="indent"><a href="#sketching-letterforms">Sketching Letterforms</a></li>
+                    <li class="indent"><a href="#increasing-fidelity">Increasing Fidelity</a></li>
+                    <li class="indent"><a href="#creating-font">Creating a Font</a></li>
+                    <li class="indent"><a href="#final-design">Final Design</a></li>
+                <li><a href="#reflection">Reflection</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </div>
+
+        <main>
+        <div class="col-9 main-content">
+            <h2 class="small-caps new-section" id="overview">Overview</h2>
+            <h3>About This Project</h3>
+                <p class="first-p">This was an individual project for my Typography and Layout class at CSUSB. Over the course of four weeks, I created a concept, designed a typeface based on research, and made a digital font.</p>
+            <h3>The Assignment</h3>
+                <p class="first-p">In this project, we were tasked with designing an expressive typeface for a fictional artist.</p>
+            <h3>My Deliverable</h3>
+                <p class="first-p">I created Comette, a geometric sans-serif typeface for display. <span class="highlight">Inspired by the Motown era, Paul Renner's Futura, and the Apollo 11 Moon landing, Comette embodies a retrofuturistic look.</span></p>
+                <img src="assets/comette.jpg" alt="">
+
+            <h2 class="small-caps new-section" id="ideation">Ideation</h2>
+            <h3 id="imagining-artist">Imagining the Artist</h3>
+                <p class="first-p">I started this project by imagining my artist. <span class="highlight">I wanted the retro feel of a Motown group with an afrofuturistic direction like Janelle Monáe.</span> I created a mood board to gather all of my inspiration in one place.</p>
+                <img src="assets/comette-moodboard.jpg" alt="A Pinterest moodboard with images of Afrofuturistic art, Motown ephemera, Janelle Monae album covers, and geometric typefaces. The overall color palette yellow, orange, pink, and purple.">
+                <p class="caption">My mood board for The Comettes.</p>
+                <p>I created The Comettes, named for the celestial body in the fashion of Motown groups like The Ronettes and The Supremes.</p>
+
+            <h2 class="small-caps new-section" id="research">Research</h2>
+            <h3 id="serif-sans-serif">Retrofuturism Through Type</h3>
+                <p class="first-p">My retrofuturistic vision for The Comettes required a balance of old and new in my typeface design.</p>
+                <p>After researching the history of sans-serif typefaces, <span class="highlight">Futura became a major inspiration for my typeface.</span> Designed by Paul Renner in 1927, today it can be considered a past vision of a modern future.</p>
+                <p>Futura has also come to be associated with space and the future. In 1968, it was featured prominently in the film <em>2001: A Space Odyssey</em>&mdash; another past imagining of the future, by today's standards. And, a year later, Futura really made it to outer space. <span class="highlight">When Apollo 11 landed the first humans on the Moon, a commemorative plaque&mdash; set in Futura&mdash; was left behind.</span></p>
+                <imG src="assets/comette-apollo-11-plaque.jpg" alt="Stainless steel plaque that reads: Here men from the planet Earth first set foot upon the moon. July 1969, A.D. We came in peace for all mankind.">
+                <p class="caption">The Apollo 11 plaque. Photo: NASA.</p>
+                <p>I discovered that Futura was actually a favorite of NASA for a time. From about 1961-1976, Futura was used on all of their materials [<a href="#reference-1">1</a>]. NASA will always have a futuristic feel, but the era defined by Futura is situated firmly in the past.</p>
+
+            <h2 class="small-caps new-section" id="design">Design</h2>
+            <h3 id="sketching-letterforms">Sketching Letterforms</h3>
+                <p class="first-p">Inspired by Futura and its place on the Moon, <span class="highlight">I decided to design a geometric sans-serif typeface.</span></p>
+                <img src="assets/comette-sketch.jpg" class="no-caption">
+                <p>I started by sketching geometric letterforms.</p>
+                <img src="assets/comette-sketch-2.jpg" class="no-caption">
+                <p>After some feedback, I opted for a low x-height.</p>
+                <p>I worked on aletering the letteforms to be other letters.</p>
+            <h3 id="increasing-fidelity">Increasing Fidelity</h3>
+                <p class="first-p">Next, I created vectors for each letter in Illustrator. I built each letter on a grid, using straight lines and circle segments for curves.</p>
+                <img src="assets/comette-black.png" alt="Black characters from the Comette typeface, composed of capital letters, digits 0 through 9, and various symbols." class="no-caption">
+            <h3 id="creating-font">Creating a Font</h3>
+                <p class="first-p">I imported my vectors into BirdFont to create a working font file. Then, I used Comette to create mockups of concert tour ephemera for The Comettes.</p>
+            <h3 id="final-design">Final Design</h3>
+                <img src="assets/comette-instagram.jpg" alt="A phone mockup showing The Comettes' Instagram profile. The 9 most recent posts create one photo of a Black woman looking into a mirror with dramatic makeup and lighting. The text on the photo reads: The Sounds of Earth. 2022 Tour.">
+                <p class="caption">Instagram tour announcement.</p>
+                <img src="assets/comette-billboard.jpg" alt="A billboard showing a Black woman looking into a mirror with dramatic makeup and lighting. The text on the billboard reads: The Comettes. The Sounds of Earth. 2022 Tour. Tickets on Sale Now.">
+                <p class="caption">Billboard ad.</p>
+                <img src="assets/comette-hoodie.jpg" alt="The back of a black hoodie. The text on the hoodie reads: The Sounds of Earth Tour. Various summer dates and locations across the United State are listed.">
+                <p class="caption">Concert tour hoodie.</p>
+
+            <h2 class="small-caps new-section" id="reflection">Reflection</h2>
+            <h3>What I Learned</h3>
+                <p class="first-p">The best part of this project was researching typographical history. Learning about Futura and NASA and the Moon was really interesting. It's amazing how much history a typeface can have and how that history informs our visual language and interpretation today&mdash; whether we are aware of it or not.</p>
+            <h4>Next Steps</h4>
+                <p class="first-p">If I were to revisit this project, I would start by revising a few of my symbols. Looking back, I can see that my apostrophes and quotations aren't distinguishable from hatch marks. Updating these symbols would also influence the design of my comma and semicolon. From there, I would want to expand this typeface to include lowercase letters and additional symbols.</p>
+
+            <h2 class="small-caps new-section" id="references">References</h2>
+                <ol>
+                    <li id="reference-1">Thomas, D., & Lupton, E. (2017). <em>Never use Futura</em>. Princeton architectural press.</li>
+                </ol>
+        </div>
+        </main>
+    </div>
+
+    <div class="footer">
+        <div class="all-content">
+            <div class="footer-content">
+                <p>&copy; 2023 Alina Verduzco</p>
+                <a href="https://www.linkedin.com/in/alinaverduzco/" target="_blank" rel="noopener noreferrer"><img src="assets/linked-in.png" alt="Visit my LinkedIn profile" class="icon"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+    </script>
+
+</body>
+</html>
